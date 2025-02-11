@@ -108,6 +108,49 @@
         footer a:hover {
             color: #48C774; /* Vert lors du survol */
         }
+
+        /* Responsiveness */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem; /* Réduction pour les écrans moyens */
+            }
+
+            p {
+                font-size: 1.1rem; /* Plus petit pour de la lisibilité */
+            }
+
+            .cta-button {
+                padding: 12px 25px; /* Bouton légèrement plus petit */
+                font-size: 1rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            body {
+                padding: 20px; /* Ajout de marge pour les petits écrans */
+            }
+
+            .logo-container {
+                max-width: 300px; /* Logo plus petit sur mobile */
+            }
+
+            h1 {
+                font-size: 2rem; /* Titre encore plus réduit */
+            }
+
+            p {
+                font-size: 1rem; /* Texte plus compact */
+            }
+
+            .cta-button {
+                padding: 10px 20px; /* Bouton adapté aux petits écrans */
+                font-size: 0.9rem;
+            }
+
+            footer {
+                font-size: 0.8rem; /* Footer réduit sur mobile */
+            }
+        }
     </style>
 </head>
 <body>
@@ -130,7 +173,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 GeoGames.fr - Domanchin Matthew <br> <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+        <p>© 2025 GeoGames.fr - <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
     </footer>
 </body>
 </html>
