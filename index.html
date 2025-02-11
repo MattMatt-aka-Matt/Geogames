@@ -8,11 +8,12 @@
     <meta name="author" content="GeoGames Team">
     <meta name="robots" content="index, follow">
     <title>GeoGames.fr - Arrive bientôt !</title>
-    <link rel="stylesheet" href="styles.css">
+    
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
+
     <style>
-        /* Styles CSS */
+        /* Styles généraux */
         * {
             margin: 0;
             padding: 0;
@@ -21,19 +22,22 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom, #1d3557, #457b9d);
-            color: #f1faee;
+            background: linear-gradient(135deg, #3E8E7E, #2C5E89);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
             text-align: center;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
-            flex-direction: column;
+            flex-direction: column; /* Alignement vertical */
             justify-content: center;
             align-items: center;
         }
 
         h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
+            font-size: 3rem;
+            margin-top: 1rem;
+            color: #ffffff; /* Blanc classique pour le titre */
             text-transform: uppercase;
             letter-spacing: 2px;
         }
@@ -41,57 +45,90 @@
         p {
             font-size: 1.2rem;
             margin: 10px auto;
+            max-width: 700px; /* Limitation de la largeur du texte */
+            line-height: 1.8; /* Lecture fluide */
+            color: #DFF8FB; /* Teinte bleu clair */
         }
 
         .highlight {
-            color: #e63946;
+            color: #48C774; /* Vert lié au logo */
             font-weight: bold;
         }
 
+        /* Logo */
         .logo-container {
-            margin-bottom: 20px;
+            margin: 15px auto;
+            max-width: 400px; /* Limitation taille maxi du logo */
+            width: 90%;
         }
 
         .logo-container img {
-            width: 150px;
-            height: 150px;
-            animation: logo-pulse 2s infinite;
+            width: 100%;
+            height: auto; /* Maintien du ratio */
+            padding: 10px;
+            border-radius: 15px; /* Coins arrondis */
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); /* Effet shadow */
         }
 
-        @keyframes logo-pulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
+        /* Bouton ou call-to-action (optionnel) */
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #ffffff; /* Blanc pour le texte */
+            background-color: #48C774; /* Vert vibrant inspiré du logo */
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
+        .cta-button:hover {
+            background-color: #3A9B64; /* Teinte légèrement différente au survol */
+            transform: translateY(-3px); /* Effet de lévitation */
+        }
+
+        /* Footer */
         footer {
             position: absolute;
             bottom: 10px;
             font-size: 0.9rem;
-            color: #a8dadc;
+            color: #B0E3EC; /* Teinte bleu clair */
         }
 
         footer a {
-            color: #f1faee;
+            color: #ffffff;
             text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #48C774; /* Vert lors du survol */
         }
     </style>
 </head>
 <body>
+    <!-- Conteneur du logo -->
     <div class="logo-container">
-        <!-- Remplace ici "logo.png" par le nom exact de ton logo -->
         <img src="logo.png" alt="GeoGames Logo">
     </div>
 
+    <!-- Titre principal -->
     <h1>GeoGames.fr</h1>
-    <p>
-        Préparez-vous à explorer le monde avec des <span class="highlight">jeux géographiques</span> captivants !
-    </p>
-    <p>La plateforme arrive très bientôt en 2025.</p>
 
+    <!-- Texte principal -->
+    <p>
+        Plongez dans l'univers des <span class="highlight">jeux géographiques</span>, où apprentissage et divertissement s'unissent ! 
+    </p>
+    <p>La plateforme arrive bientôt !</p>
+
+    <!-- Bouton (optionnel) -->
+    <a href="#" class="cta-button">Restez informé !</a>
+
+    <!-- Footer -->
     <footer>
         <p>© 2025 GeoGames.fr - <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
     </footer>
